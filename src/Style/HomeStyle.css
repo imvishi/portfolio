@@ -1,0 +1,65 @@
+.ContainerStyle {
+    background-image: url("../Resources/Background.jpg");
+    background-position: 25% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.WelcomeDiv {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.WelcomeIcon {
+    cursor: pointer;
+    font-size: 3em;
+    color: #FFFFFF;
+    -webkit-animation: iconAnimate 1s infinite;
+    -moz-animation: iconAnimate 1s infinite;
+    -ms-animation: iconAnimate 1s infinite;
+    -o-animation: iconAnimate 1s infinite;
+    animation: iconAnimate 1s infinite;
+}
+
+.WelcomeIcon:hover {
+    font-size: 3.5em;
+    color: #008CBA;
+}
+
+@-webkit-keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
+
+@-moz-keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
+@-webkit-keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
+@-o-keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
+
+@-ms-keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
+
+@keyframes iconAnimate {
+    0% {font-size: 3em;}
+    50% {font-size: 3.5em;}
+    100% {font-size: 3em;}
+}
