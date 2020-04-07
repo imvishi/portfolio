@@ -6,6 +6,7 @@ import Error404 from "./Error404";
 import {Switch, Route, Redirect, withRouter} from 'react-router-dom'
 import {TransitionGroup, CSSTransition} from "react-transition-group";
 import '../Style/transitionStyle.css'
+import SocialMedia from "./SocialMedia";
 
 /**
  * Main component that handle all the sections of the app.
@@ -23,6 +24,7 @@ const mainClass = class Main extends Component {
         return (
             <div>
                 {canShowNavBar ? <ToolBar/> : null}
+                <SocialMedia/>
                 <TransitionGroup>
                     <CSSTransition
                         key={location.key}
