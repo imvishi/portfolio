@@ -4,6 +4,7 @@ import {faHandPointRight} from "@fortawesome/free-solid-svg-icons";
 import '../Style/HomeStyle.css'
 import '../Style/FontStyle.sass'
 import {SectionType} from "../js/SectionType";
+import {Link} from "react-router-dom";
 
 /**
  * Component to show the Home Screen of the site.
@@ -11,11 +12,6 @@ import {SectionType} from "../js/SectionType";
 export class Home extends Component {
     constructor(props) {
         super(props)
-        this.onButtonClick = this.onButtonClick.bind(this)
-    }
-
-    onButtonClick() {
-        this.props.onSectionChanged(SectionType.ABOUT)
     }
 
     render() {
@@ -25,10 +21,9 @@ export class Home extends Component {
                     <p className="headerTextLite">Hey, I'm Vishal Verma</p>
                     <span>
                         <p className="subHeaderTextLite">Let's take a tour</p>
-                        <FontAwesomeIcon
+                        <Link to="/about"><FontAwesomeIcon
                             className="WelcomeIcon"
-                            icon={faHandPointRight}
-                            onClick={this.onButtonClick}/>
+                            icon={faHandPointRight}/></Link>
                     </span>
                 </div>
             </div>

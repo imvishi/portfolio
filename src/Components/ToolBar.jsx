@@ -3,7 +3,7 @@ import {
     Navbar,
     Nav
 } from "react-bootstrap";
-import {SectionType} from "../js/SectionType";
+import {Link} from "react-router-dom";
 
 const divStyle = {
     paddingTop: 10,
@@ -19,11 +19,6 @@ export default class ToolBar extends Component {
 
     constructor(props) {
         super(props);
-        this.onSectionClick = this.onSectionClick.bind(this)
-    }
-
-    onSectionClick(section) {
-        this.props.onSectionChanged(section)
     }
 
     render() {
@@ -33,11 +28,10 @@ export default class ToolBar extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <ul style={ulStyle} onClick={() => this.onSectionClick(SectionType.HOME)}> Home</ul>
-                            <ul style={ulStyle} onClick={() => this.onSectionClick(SectionType.ABOUT)}> About</ul>
-                            <ul style={ulStyle} onClick={() => this.onSectionClick(SectionType.PORTFOLIO)}>Portfolio
-                            </ul>
-                            <ul style={ulStyle} onClick={() => this.onSectionClick(SectionType.CONTACT)}>Contact</ul>
+                            <ul style={ulStyle}><Link to="/home"> Home</Link></ul>
+                            <ul style={ulStyle}><Link to="/about">About</Link></ul>
+                            <ul style={ulStyle}><Link to="/portfolio">Portfolio</Link></ul>
+                            <ul style={ulStyle}><Link to="/contact">Contact</Link></ul>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
