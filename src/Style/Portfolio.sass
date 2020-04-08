@@ -1,0 +1,62 @@
+@import "FontStyle"
+
+$firstDivColor: #e6f2ff
+$secondDivColor: #ffffe6
+=divStyle
+  text-align: center
+  font-family: Roboto, serif
+  margin-bottom: -16px
+
+.divStyleOdd
+  +divStyle
+  background: $firstDivColor
+
+.divStyleEven
+  +divStyle
+  background: $secondDivColor
+
+.triangleEven
+  fill: $secondDivColor
+
+.triangleOdd
+  fill: $firstDivColor
+
+.overlay
+  position: absolute
+  bottom: 100%
+  left: 0
+  right: 0
+  background-color: rgba(207, 195, 192, 0.7)
+  overflow: hidden
+  width: 100%
+  height: 0
+  transition: 0.5s ease
+
+.Col
+  width: 100%
+  height: 300px
+  margin-top: 5%
+  margin-bottom: 5%
+
+.outerDiv
+  cursor: pointer
+  position: relative
+  width: 100%
+  height: 300px
+  box-shadow: 2px 2px 25px  #646161
+
+.outerDiv:hover .overlay
+  bottom: 0
+  height: 100%
+
+.text
+  +fontStyleRobotoDark
+  font-size: 2.5em
+  font-weight: bold
+  position: absolute
+  top: 50%
+  left: 50%
+  -webkit-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+  text-align: center
