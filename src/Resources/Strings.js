@@ -1,0 +1,6 @@
+export const experienceCogniHeader = "Cognizant Technology Solution"
+export const experienceCogniBody = "Hello some thing about my android developmentsome thing about my android developmentsome thing about my android developmentsome thing about my android developmentsome thing about my android de"
+export const experienceCogniRole = "Software Developer"
+export const experienceRajaHeader = "Raja Software labs"
+export const experienceRajaBody = "Hello some thing about my android developmentsome thing about my android developmentsome thing about my android developmentsome thing about my android developmentsome thing about my android de"
+export const experienceRajaRole = "Software Developer"
