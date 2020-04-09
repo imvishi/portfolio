@@ -9,6 +9,7 @@ import {TransitionGroup, CSSTransition} from "react-transition-group";
 import '../Style/transitionStyle.css'
 import SocialMedia from "./SocialMedia";
 import About from "./About";
+import Resume from "../Resources/Resume.pdf"
 
 /**
  * Main component that handle all the sections of the app.
@@ -68,7 +69,7 @@ const mainClass = class Main extends Component {
                             <Route exact path="/"><Redirect to="/home"/></Route>
                             <Route path="/home" component={() => <Home onSectionChanged={this.handleSectionChange}/>}/>
                             <Route path="/about" component={() => <About/>}/>
-                            <Route path="/portfolio" component={Error404}/>
+                            <Route path="/portfolio" component={()=> window.open(Resume)}/>
                             <Route path="/contact" component={Error404}/>
                             <Route component={Error404}/>
                         </Switch>
